@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 Movie Survey</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <h1 id="title">2021 Movie Survey</h1>
+            <p id="description">Thank you for helping us improve movie theaters across the country</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Age <span class="clue">(optional)</span></label>
+                <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" required>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite movie genre?</p>
+                <select name="genre" id="dropdown" required>
+                    <option disabled selected value>Select favorite genre</option>
+                    <option value="Cartoons">Cartoons</option>
+                    <option value="Suspense">Suspense</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Horror">Horror</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>When was the last time you went to the movies?</p>
+                <label>
+                    <input type="radio" name="last-movie" value="6-months" checked>
+                    Less than six months ago
+                </label>
+                <label>
+                    <input type="radio" name="last-movie" value="1-year">
+                    Less than a year ago
+                </label>
+                <label>
+                    <input type="radio" name="last-movie" value="more-than-1-year">
+                    More than a year ago
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Why do you go to the movies?<span class="clue">(Check all that apply)</span></p>
+                <label><input name="why" value="stay-current" type="checkbox">Stay up on the latest movies</label>
+                <label><input name="why" value="friends" type="checkbox">Spend time with friends</label>
+                <label><input name="why" value="date" type="checkbox">For dates</label>
+                <label><input name="why" value="specific-movie" type="checkbox">I only go for a specific movie series</label>
+                <label><input name="why" value="boredom" type="checkbox">Boredom</label>
+            </div>
+            <div class="form-group">
+                <p>What are a few of your favorite movies?</p>
+                <textarea id="favorites" name="favorites" placeholder="Enter your favorite movies here!"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
